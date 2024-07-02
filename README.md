@@ -1,7 +1,6 @@
 # Seeing Beyond Statistics: Anscombe’s Quartet and the Power of Graphs
-
-
 <img align="right" style="margin-left: 50px;" width="400" src="anscombes-quartet.png">
+
 
 In 1937, statistician Francis Anscombe challenged the commonly held
 belief that “numerical calculations are exact, but graphs are rough”
@@ -15,13 +14,9 @@ those datasets and Polars to verify their descriptive statistics. More
 specifically, we:
 
 - Turn the original values that Anscombe used into one long DataFrame
-  </li>
 - Verify the descriptive statistics
-  </li>
 - Create a couple of exploratory data visualizations
-  </li>
 - Fine-tune the visualization to make it suitable for communication
-  </li>
 
 ``` python
 import polars as pl

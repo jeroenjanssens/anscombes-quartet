@@ -209,9 +209,6 @@ one.
 _.save("anscombes-quartet.png")
 ```
 
-    /Users/jeroen/Library/Caches/pypoetry/virtualenvs/non-package-mode-zxCXwf2j-py3.12/lib/python3.12/site-packages/plotnine/ggplot.py:606: PlotnineWarning: Saving 6.4 x 4.8 in image.
-    /Users/jeroen/Library/Caches/pypoetry/virtualenvs/non-package-mode-zxCXwf2j-py3.12/lib/python3.12/site-packages/plotnine/ggplot.py:607: PlotnineWarning: Filename: anscombes-quartet.png
-
 ## Bonus: Apply Linear Regression
 
 In this bonus section, we use scikit-learn to fit a linear regression

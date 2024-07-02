@@ -53,13 +53,7 @@ anscombe_quartet = pl.concat([
 anscombe_quartet
 ```
 
-<div><style>
-.dataframe > thead > tr,
-.dataframe > tbody > tr {
-  text-align: right;
-  white-space: pre-wrap;
-}
-</style>
+<div>
 <small>shape: (44, 3)</small>
 
 | dataset | x    | y    |
@@ -95,13 +89,7 @@ anscombe_quartet.group_by("dataset", maintain_order=True).agg(
 )
 ```
 
-<div><style>
-.dataframe > thead > tr,
-.dataframe > tbody > tr {
-  text-align: right;
-  white-space: pre-wrap;
-}
-</style>
+<div>
 <small>shape: (4, 6)</small>
 
 | dataset | mean_x | mean_y | variance_x | variance_y | correlation_xy |
@@ -264,13 +252,7 @@ anscombe_quartet.group_by("dataset", maintain_order=True).agg(
 ).unnest("lr")
 ```
 
-<div><style>
-.dataframe > thead > tr,
-.dataframe > tbody > tr {
-  text-align: right;
-  white-space: pre-wrap;
-}
-</style>
+<div>
 <small>shape: (4, 9)</small>
 
 | dataset | mean_x | mean_y | variance_x | variance_y | correlation_xy | intercept | slope | r2   |

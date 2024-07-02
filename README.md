@@ -3,9 +3,9 @@
 
 <img align="right" width="320" height="240" src="anscombes-quartet.png">
 
-In 1937, statistician Francis Anscombe challenged the commonly held
+In 1973, statistician Francis Anscombe challenged the commonly held
 belief that “numerical calculations are exact, but graphs are rough”
-(Anscombe, 1937). His strategy was to manually construct four small
+(Anscombe, 1973). His strategy was to manually construct four small
 datasets—now known as Anscombe’s Quartet—that have different
 distributions but nearly identical descriptive statistics. It’s perhaps
 the best argument for visualizing data.

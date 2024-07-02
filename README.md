@@ -1,6 +1,7 @@
 # Seeing Beyond Statistics: Anscombe’s Quartet and the Power of Graphs
-<img align="right" style="margin-left: 50px;" width="400" src="anscombes-quartet.png">
 
+
+<img align="right" width="320" height="240" src="anscombes-quartet.png">
 
 In 1937, statistician Francis Anscombe challenged the commonly held
 belief that “numerical calculations are exact, but graphs are rough”

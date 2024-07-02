@@ -3,33 +3,25 @@
 
 <img align="right" style="margin-left: 50px;" width="400" src="anscombes-quartet.png">
 
-<p>
 In 1937, statistician Francis Anscombe challenged the commonly held
 belief that “numerical calculations are exact, but graphs are rough”
 (Anscombe, 1937). His strategy was to manually construct four small
 datasets—now known as Anscombe’s Quartet—that have different
 distributions but nearly identical descriptive statistics. It’s perhaps
 the best argument for visualizing data.
-</p>
-<p>
+
 In this notebook we replicate his paper by using Plotnine to visualize
 those datasets and Polars to verify their descriptive statistics. More
 specifically, we:
-<ul>
-<li>
-Turn the original values that Anscombe used into one long DataFrame
-</li>
-<li>
-Verify the descriptive statistics
-</li>
-<li>
-Create a couple of exploratory data visualizations
-</li>
-<li>
-Fine-tune the visualization to make it suitable for communication
-</li>
-</ul>
-</p>
+
+- Turn the original values that Anscombe used into one long DataFrame
+  </li>
+- Verify the descriptive statistics
+  </li>
+- Create a couple of exploratory data visualizations
+  </li>
+- Fine-tune the visualization to make it suitable for communication
+  </li>
 
 ``` python
 import polars as pl

@@ -21,18 +21,8 @@ specifically, we:
 
 ``` python
 import polars as pl
-import plotnine as p9
 from plotnine import *
-
-pl.Config.set_float_precision(2)
-p9.options.set_option("dpi", 72)
-
-print(f"Polars version: {pl.__version__}")
-print(f"Plotnine version: {p9.__version__}")
 ```
-
-    Polars version: 1.0.0
-    Plotnine version: 0.13.6
 
 ## Create a Long DataFrame
 
@@ -66,20 +56,20 @@ anscombe_quartet
 <div>
 <small>shape: (44, 3)</small>
 
-| dataset | x     | y     |
-|---------|-------|-------|
-| str     | f64   | f64   |
-| "I"     | 10.00 | 8.04  |
-| "I"     | 8.00  | 6.95  |
-| "I"     | 13.00 | 7.58  |
-| "I"     | 9.00  | 8.81  |
-| "I"     | 11.00 | 8.33  |
-| …       | …     | …     |
-| "IV"    | 8.00  | 5.25  |
-| "IV"    | 19.00 | 12.50 |
-| "IV"    | 8.00  | 5.56  |
-| "IV"    | 8.00  | 7.91  |
-| "IV"    | 8.00  | 6.89  |
+| dataset | x    | y    |
+|---------|------|------|
+| str     | f64  | f64  |
+| "I"     | 10.0 | 8.04 |
+| "I"     | 8.0  | 6.95 |
+| "I"     | 13.0 | 7.58 |
+| "I"     | 9.0  | 8.81 |
+| "I"     | 11.0 | 8.33 |
+| …       | …    | …    |
+| "IV"    | 8.0  | 5.25 |
+| "IV"    | 19.0 | 12.5 |
+| "IV"    | 8.0  | 5.56 |
+| "IV"    | 8.0  | 7.91 |
+| "IV"    | 8.0  | 6.89 |
 
 </div>
 
@@ -90,6 +80,8 @@ we use Polars to compute the mean and the variance of both `x` and `y`.
 We also compute the correlation between `x` and `y`:
 
 ``` python
+pl.Config.set_float_precision(2)
+
 anscombe_quartet.group_by("dataset", maintain_order=True).agg(
     pl.col("x", "y").mean().name.prefix("mean_"),
     pl.col("x", "y").var().name.prefix("variance_"),

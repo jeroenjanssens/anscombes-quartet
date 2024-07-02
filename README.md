@@ -1,7 +1,7 @@
 # Seeing Beyond Statistics: Anscombe’s Quartet and the Power of Graphs
 
 
-<img style="float: right; margin-left: 50px;" width="400" src="anscombes-quartet.png">
+<img align="right" style="margin-left: 50px;" width="400" src="anscombes-quartet.png">
 
 <p>
 In 1937, statistician Francis Anscombe challenged the commonly held
